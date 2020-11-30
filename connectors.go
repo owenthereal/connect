@@ -52,6 +52,7 @@ type ConnectorStatus struct {
 type ConnectorState struct {
 	State    string `json:"state"`
 	WorkerID string `json:"worker_id"`
+	Trace    string `json:"trace,omitempty"`
 }
 
 // TaskState reflects the running state of a Task and the worker where it is
